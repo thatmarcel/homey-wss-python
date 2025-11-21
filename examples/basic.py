@@ -17,9 +17,7 @@ async def main():
     for device in devices:
         driver = next(driver for driver in drivers if driver.id == device.driver_id)
 
-        print(f"- {device.name} ({driver.owner_name}, {driver.name}, {device.id}){
-            ':' if len(device.capabilities) > 0 else ''
-        }")
+        print(f"- {device.name} ({driver.owner_name}, {driver.name}, {device.id}){':' if len(device.capabilities) > 0 else ''}")
 
         for capability in device.capabilities:
             print(f"    - {capability.title} ({capability.id}, {capability.value_type}) => {capability.value}")
