@@ -1,0 +1,15 @@
+[project]
+name = "homey_wss_python"
+version = "0.1.0"
+authors = [
+    { name = "thatmarcel", email = "contact@thatmarcel.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "requests-async>=0.2.4",
+    "websockets>=15.0.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.6,<0.10.0"]
+build-backend = "uv_build"
