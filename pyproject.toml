@@ -10,7 +10,7 @@ dependencies = [
     "websockets>=15.0.1",
 ]
 readme = "README.md"
-description = "Python client for Homey's internal WebSocket API"
+description = "Python client for Homey (Cloud)'s internal WebSocket API"
 license = "AGPL-3.0-only"
 keywords = ["homey"]
 
